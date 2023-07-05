@@ -5,16 +5,21 @@ export const StyledUserCard = styled.div`
   width: 100%;
   max-width: 350px;
   height: auto;
-  background-color: white;
   flex-direction: column;
   border-radius: 20px;
 `;
 
 export const StyledAvatarContainer = styled.div`
   display: flex;
-  width: 100%;
-
+  align-items: center;
   justify-content: center;
+  margin: 20px 0;
+  & img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
 `;
 
 export const StyledAboutSection = styled.div`

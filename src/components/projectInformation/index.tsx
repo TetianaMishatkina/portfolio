@@ -28,7 +28,6 @@ export const ProjectInformation: FC<ProjectProps> = ({
   return (
     <StyledProjectInformation>
       <StyledProjectAvatar>
-        <Avatar img={avatar} />
         <StyledProjectName>{name}</StyledProjectName>
       </StyledProjectAvatar>
 

@@ -18,7 +18,7 @@ export const PersonalInformation = () => {
     <StyledPersonalInformation>
       <StyledName>Tetiana Mishatkina</StyledName>
       <StyledLocation>
-        <MapPin size={15} />
+        <MapPin color="white" size={15} />
         <StyledNameLocation>Krakow, Poland</StyledNameLocation>
       </StyledLocation>
 
@@ -27,7 +27,7 @@ export const PersonalInformation = () => {
           <StyledQuestion>Who am I?</StyledQuestion>
           <StyledDivider></StyledDivider>
           <StyledInfo>
-            Hi! I am Junior Frontend Developer.
+            Hello! I am Junior Frontend Developer.
             <br /> Here you can see my projects that I created by myself!
           </StyledInfo>
         </StyledQuestionBlock>

@@ -9,27 +9,40 @@ export const StyledPersonalInformation = styled.div`
 
 export const StyledName = styled.div`
   padding: 5px;
-  font-size: 20px;
-  font-weight: 500;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 25px;
 `;
 export const StyledEmail = styled.div`
   padding: 10px;
   font-size: 12px;
   opacity: 70%;
-  color: #752f62;
+  & a {
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+      "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+      "Helvetica Neue", sans-serif;
+  }
 `;
 export const StyledInfo = styled.div`
   padding: 10px;
   width: 100%;
   max-width: 200px;
   display: flex;
-  font-size: 14px;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 17px;
 `;
 
 export const StyledInfoContainer = styled.div``;
 export const StyledQuestionBlock = styled.div`
   margin: 30px 0;
   display: flex;
+  text-align: center;
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -37,12 +50,16 @@ export const StyledQuestionBlock = styled.div`
 export const StyledDivider = styled.div`
   width: 100%;
   height: 1px;
-  background-color: black;
+  background-color: white;
+  opacity: 50%;
   margin: 5px 0;
 `;
 export const StyledQuestion = styled.div`
-  font-size: 11px;
-  color: #65142f;
+  color: #f5a9a9;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 12px;
 `;
 
 export const StyledLocation = styled.div`
@@ -56,4 +73,8 @@ export const StyledNameLocation = styled.div`
   font-size: 12px;
   margin-left: 5px;
   opacity: 70%;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
 `;
