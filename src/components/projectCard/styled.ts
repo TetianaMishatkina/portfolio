@@ -1,14 +1,45 @@
 import styled from "styled-components/macro";
 
-export const StyledProjectCard = styled.div`
+export const StyledProjectCard = styled.div<{ languageUrl: string }>`
   display: flex;
   width: 100%;
-  max-width: 800px;
-  height: auto;
-  background-color: white;
   flex-direction: column;
-  opacity: 60%;
   border-radius: 20px;
+  height: 100vh;
+  justify-content: center;
+  padding:10px;
+  align-items: center;
+  position: relative;
+
+  &::before{
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    content: '';
+    background-image: url(${props => props.languageUrl});
+    background-attachment: fixed;
+    background-size: 100px;
+    opacity:10%;
+    width:100%;
+    height: 100%;
+    pointer-events: none;
+    
+
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+  }
+
 `;
 
-export const StyledAboutSection = styled.div``;
+export const StyledAboutSection = styled.section`
+  background-color: rgba(255,255,255, 1);
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  border-radius:22px;
+
+`;

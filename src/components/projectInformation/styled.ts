@@ -1,6 +1,12 @@
 import styled from "styled-components/macro";
 
-export const StyledProjectInformation = styled.div``;
+export const StyledProjectInformation = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+`;
+
+
 
 export const StyledProjectName = styled.div`
   padding: 10px;
@@ -27,7 +33,6 @@ export const StyledProjectAvatar = styled.div`
 export const StyledProjectInfoContainer = styled.div`
   display: flex;
   width: 100%;
-  max-width: 500px;
   height: auto;
   margin: 0 auto;
   align-items: center;
@@ -74,3 +79,21 @@ export const StyledProjectLink = styled.a`
   opacity: 70%;
   color: #752f62;
 `;
+
+export const StyledProjectVisualozation = styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+margin: 0 30px;
+ & img{
+  border-radius: 10px;
+  
+  width:300px;
+  margin:0 autopx;
+ }
+`
+
+export const StyledProjectContent = styled.div`
+padding:0 50px;
+width:100%;`

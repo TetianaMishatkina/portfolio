@@ -5,6 +5,8 @@ export const StyledLeftSide = styled.div`
   align-items: center;
   justify-content: center;
   flex: 1;
+  position: relative;
+  z-index: 2;
   min-width: 300px;
   height: 100vh;
   background: #170d25;
@@ -22,6 +24,7 @@ export const StyledRightSide = styled.div`
   flex: 3;
   min-width: 500px;
   height: 100vh;
+  overflow: scroll;
 `;
 
 export const StyledMain = styled.div`
@@ -30,29 +33,19 @@ export const StyledMain = styled.div`
   flex-wrap: wrap;
   height: 100vh;
   background: #170d25;
+  overflow: hidden;
 `;
 
 export const StyledMock = styled.div`
   width: 100%;
-  height: 100vh;
   z-index: 0;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-
-
-  &::after{
-    position: absolute;
-    content: '';
-    background-image: url("/logo/typescript.png");
-    background-size: 100px;
-    opacity:10%;
-    width: 100%;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: scroll;
 `;

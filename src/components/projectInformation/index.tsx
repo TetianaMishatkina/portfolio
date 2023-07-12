@@ -9,6 +9,8 @@ import {
   StyledProjectDescription,
   StyledProjectLink,
   StyledProjectAvatar,
+  StyledProjectVisualozation,
+  StyledProjectContent
 } from "./styled";
 import { Avatar } from "../avatar";
 
@@ -16,18 +18,27 @@ interface ProjectProps {
   name: string;
   description: string;
   repoLink: string;
-  avatar: string;
 }
 
+const projectVisualMap ={
+  "Fire-game" :"/projectsView/fire-game.png",
+  "Goal-counter": "/projectsView/goal-counter.png",
+ "Task-manager": "/projectsView/task-manager.png"
+}
+
+
 export const ProjectInformation: FC<ProjectProps> = ({
-  avatar,
   name,
   description,
   repoLink,
 }) => {
   return (
     <StyledProjectInformation>
-      <StyledProjectAvatar>
+      <StyledProjectVisualozation>
+         <img src={projectVisualMap[name as keyof typeof projectVisualMap]}/> 
+      </StyledProjectVisualozation>
+      <StyledProjectContent>
+           <StyledProjectAvatar>
         <StyledProjectName>{name}</StyledProjectName>
       </StyledProjectAvatar>
 
@@ -46,6 +57,8 @@ export const ProjectInformation: FC<ProjectProps> = ({
           </StyledProjectLink>
         </StyledQuestionBlock>
       </StyledProjectInfoContainer>
+      </StyledProjectContent>
+   
     </StyledProjectInformation>
   );
 };

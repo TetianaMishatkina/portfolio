@@ -2,10 +2,11 @@ import styled from "styled-components/macro";
 
 export const StyledStarsContainer = styled.canvas<{ isSeeMore: boolean }>`
   position: absolute;
-  z-index: 0;
+  z-index: 3;
   inset: 0;
   width: 100%;
   height: 100vh;
+  pointer-events: none;
   ${(props) =>
     props.isSeeMore
       ? `
