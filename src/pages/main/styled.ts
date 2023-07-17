@@ -6,7 +6,7 @@ export const StyledLeftSide = styled.div`
   justify-content: center;
   flex: 1;
   position: relative;
-  z-index: 2;
+  z-index: 3;
   min-width: 300px;
   height: 100vh;
   background: #170d25;

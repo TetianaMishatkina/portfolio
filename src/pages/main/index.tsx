@@ -42,14 +42,17 @@ export const Main: FC<{ handleSeeMore: VoidFunction; isSeeMore: boolean }> = ({
       ) : (
         <StyledMain id="test">
           <StyledLeftSide>
-            <UserCard />
+            <UserCard avatar={data.map((user) => user.owner.avatar_url)} />
           </StyledLeftSide>
           <StyledRightSide>
             <StyledMock>
-              {data?.map((project, index) => {
+              {data?.filter((pr) => {
+                return pr.name !== "portfolio"
+              }).map((project) => {
+
                 return (
                   <ProjectCard
-                    language={ project.language}
+                    language={project.language}
                     key={project.id}
                     name={project.name}
                     description={project.description || ""}

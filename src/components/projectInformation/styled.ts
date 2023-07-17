@@ -88,7 +88,6 @@ width: 100%;
 margin: 0 30px;
  & img{
   border-radius: 10px;
-  
   width:300px;
   margin:0 autopx;
  }

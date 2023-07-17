@@ -16,6 +16,7 @@ export const StyledUserAvatar = styled.div`
   display: flex;
   align-items: center;
   margin: 0 10px;
+  z-index: 3;
   & img {
     width: 170px;
     height: 170px;

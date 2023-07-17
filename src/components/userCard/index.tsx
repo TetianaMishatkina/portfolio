@@ -7,11 +7,15 @@ import {
 import { Avatar } from "../avatar";
 import { PersonalInformation } from "../personalInformation";
 
-export const UserCard = () => {
+interface UserProps {
+  avatar: any;
+}
+
+export const UserCard: FC<UserProps> = ({ avatar }) => {
   return (
     <StyledUserCard>
       <StyledAvatarContainer>
-        <Avatar img={"https://cdn.wallpapersafari.com/13/91/Zp2saG.jpg"} />
+        <Avatar img={avatar} />
       </StyledAvatarContainer>
       <StyledAboutSection>
         <PersonalInformation />

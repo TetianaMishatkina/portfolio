@@ -20,10 +20,11 @@ interface ProjectProps {
   repoLink: string;
 }
 
-const projectVisualMap ={
-  "Fire-game" :"/projectsView/fire-game.png",
+const projectVisualMap = {
+  "Fire-game": "/projectsView/fire-game.png",
   "Goal-counter": "/projectsView/goal-counter.png",
- "Task-manager": "/projectsView/task-manager.png"
+  "Task-manager": "/projectsView/task-manager.png",
+  "WishList": "/projectsView/wish-list.png"
 }
 
 
@@ -35,30 +36,30 @@ export const ProjectInformation: FC<ProjectProps> = ({
   return (
     <StyledProjectInformation>
       <StyledProjectVisualozation>
-         <img src={projectVisualMap[name as keyof typeof projectVisualMap]}/> 
+        <img src={projectVisualMap[name as keyof typeof projectVisualMap]} />
       </StyledProjectVisualozation>
       <StyledProjectContent>
-           <StyledProjectAvatar>
-        <StyledProjectName>{name}</StyledProjectName>
-      </StyledProjectAvatar>
+        <StyledProjectAvatar>
+          <StyledProjectName>{name}</StyledProjectName>
+        </StyledProjectAvatar>
 
-      <StyledProjectInfoContainer>
-        <StyledQuestionBlock>
-          <StyledQuestion>What is this project about?</StyledQuestion>
-          <StyledDivider />
-          <StyledProjectDescription>{description}</StyledProjectDescription>
-        </StyledQuestionBlock>
+        <StyledProjectInfoContainer>
+          <StyledQuestionBlock>
+            <StyledQuestion>What is this project about?</StyledQuestion>
+            <StyledDivider />
+            <StyledProjectDescription>{description}</StyledProjectDescription>
+          </StyledQuestionBlock>
 
-        <StyledQuestionBlock>
-          <StyledQuestion>Link to repossitory:</StyledQuestion>
-          <StyledDivider />
-          <StyledProjectLink href={repoLink} target="_blank">
-            {repoLink}
-          </StyledProjectLink>
-        </StyledQuestionBlock>
-      </StyledProjectInfoContainer>
+          <StyledQuestionBlock>
+            <StyledQuestion>Link to repossitory:</StyledQuestion>
+            <StyledDivider />
+            <StyledProjectLink href={repoLink} target="_blank">
+              {repoLink}
+            </StyledProjectLink>
+          </StyledQuestionBlock>
+        </StyledProjectInfoContainer>
       </StyledProjectContent>
-   
+
     </StyledProjectInformation>
   );
 };
