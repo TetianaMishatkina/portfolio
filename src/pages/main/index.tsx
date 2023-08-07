@@ -18,10 +18,10 @@ export const Main: FC<{ handleSeeMore: VoidFunction; isSeeMore: boolean }> = ({
   handleSeeMore,
   isSeeMore,
 }) => {
-  // const data = useMyProjects();
+  const data = useMyProjects();
   const [hasMore, setHasMore] = useState(false);
 
-  const data = res;
+  // const data = res;
 
   useEffect(() => {
     if (isSeeMore) {
