@@ -5,6 +5,7 @@ export const useMyProjects = () => {
   const [data, setData] = useState<ReposResponse>([]);
 
   const myProjects = async () => {
+    console.log('fff', process.env.REACT_APP_TOKEN)
     const response = await fetch(
       "https://api.github.com/users/TetianaMishatkina/repos",
       {
