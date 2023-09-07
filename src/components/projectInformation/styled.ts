@@ -94,5 +94,6 @@ margin: 0 30px;
 `
 
 export const StyledProjectContent = styled.div`
-padding:0 50px;
+padding:0 40px;
+box-sizing: content-box;
 width:100%;`

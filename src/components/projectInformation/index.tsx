@@ -24,7 +24,8 @@ const projectVisualMap = {
   "Fire-game": "/projectsView/fire-game.png",
   "Goal-counter": "/projectsView/goal-counter.png",
   "Task-manager": "/projectsView/task-manager.png",
-  "WishList": "/projectsView/wish-list.png"
+  "WishList": "/projectsView/wish-list.png",
+  "Calories-diary": "/projectsView/calories-diary.png"
 }
 
 

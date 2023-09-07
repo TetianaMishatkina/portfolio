@@ -21,8 +21,6 @@ export const Main: FC<{ handleSeeMore: VoidFunction; isSeeMore: boolean }> = ({
   const data = useMyProjects();
   const [hasMore, setHasMore] = useState(false);
 
-  // const data = res;
-
   useEffect(() => {
     if (isSeeMore) {
       setTimeout(() => {

@@ -29,9 +29,8 @@ export const StartPage: FC<StartPageProps> = ({
       </StyledUserAvatar>
       <StyledShortDescriptionBox>
         <StyledShortDescription>
-          Welcome! <br /> My name is Tetiana Mishatkina! <br /> I want to show
-          you my project`s portfolio that I created with using a different
-          technical stack!
+          Welcome! <br /> My name is Tetiana Mishatkina! <br />
+          Explore my portfolio to see the diverse range of projects I've built using various technical stacks!
         </StyledShortDescription>
       </StyledShortDescriptionBox>
       <StyledButton>

@@ -12,7 +12,7 @@ interface ProjectProps {
 
 const BACKGROUND_LANGUAGES = {
   typescript: '/logo/typescript.png',
-  javascript: '/logo/javascript.png',
+  javascript: '/logo/java-script.png',
   html: 'https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_640.png'
 }
 

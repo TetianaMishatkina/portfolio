@@ -27,8 +27,8 @@ export const PersonalInformation = () => {
           <StyledQuestion>Who am I?</StyledQuestion>
           <StyledDivider></StyledDivider>
           <StyledInfo>
-            Hello! I am Junior Frontend Developer.
-            <br /> Here you can see my projects that I created by myself!
+            Hello! I'm a Junior Frontend Developer committed to building quality projects.
+            <br /> Take a look at what I've created!
           </StyledInfo>
         </StyledQuestionBlock>
 
