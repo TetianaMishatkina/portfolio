@@ -8,16 +8,13 @@ import {
 import { UserCard } from "../../components/userCard";
 import { ProjectCard } from "../../components/projectCard";
 import { useMyProjects } from "../../hooks/useMyProjects";
-import { res } from "./mock";
 import { StartPage } from "../startPage";
-import { HoverLight } from "../../components/hoverLight";
-import { StarsBackground } from "../../components/starsBackground";
 
 export const Main: FC<{ handleSeeMore: VoidFunction; isSeeMore: boolean }> = ({
 	handleSeeMore,
 	isSeeMore,
 }) => {
-	const data = res;
+	const data = useMyProjects();
 	const [hasMore, setHasMore] = useState(false);
 
 	useEffect(() => {
