@@ -6,7 +6,6 @@ export const StyledLeftSide = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	flex: 1;
 	position: relative;
 	z-index: 3;
 	min-width: 300px;
@@ -15,8 +14,7 @@ export const StyledLeftSide = styled.div`
 	box-shadow: 15px 0px 10px 0px #170d25;
 
 	@media (max-width: ${mobileBreakpoint}) {
-		height: auto;
-		min-width: 100%;
+		width: 100%;
 		box-shadow: none;
 	}
 `;
@@ -32,7 +30,7 @@ export const StyledRightSide = styled.div`
 
 	@media (max-width: ${mobileBreakpoint}) {
 		height: auto;
-		min-width: 100%;
+		width: 100%;
 	}
 `;
 
